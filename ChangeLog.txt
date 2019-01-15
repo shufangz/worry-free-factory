@@ -1,0 +1,197 @@
+-----------------------------------------------------------------------------------
+2019/01/04 Baverly
+-----------------------------------------------------------------------------------
+1. Add "How To Install StampGis" document.
+M   public/StampExplorer/css/loading.css
+M   public/StampExplorer/js/stamplib/StampBasemap.js
+M   public/StampExplorer/stampGis.html
+A   public/StampExplorer/howto_install.html
+A   public/StampExplorer/tools/*
+2. Remove useless images.
+D   public/demo_data/*
+
+-----------------------------------------------------------------------------------
+2019/01/03 Baverly
+-----------------------------------------------------------------------------------
+1. Embed stampGis 3d-map into homepage.
+2. Initialize the 3d-map to the location of E5 factory.
+   -- Set layer's GUID and initial view in file "public/StampExplorer/js/config/config.js"
+M   src/assets/scss/basic.scss
+M   src/views/Home.vue
+A   public/StampExplorer/*
+renamed:
+    public/StampExplorer/index.html -> public/StampExplorer/stampGis.html
+
+-----------------------------------------------------------------------------------
+2018/12/27 ingrid
+-----------------------------------------------------------------------------------
+Add home page
+D   package-lock.json
+M   src/App.vue
+M   src/assets/demo_data/img/camera_safety_1.jpg
+M   src/assets/demo_data/img/camera_safety_2.jpg
+M   src/assets/demo_data/img/camera_safety_3.jpg
+M   src/assets/demo_data/img/camera_safety_5.jpg
+M   src/assets/demo_data/img/camera_safety_6.jpg
+A   src/assets/images/home_map.jpg
+A   src/assets/images/icon-mgn.svg
+A   src/assets/images/icon-safety.svg
+A   src/assets/images/icon-service.svg
+A   src/assets/images/link-box.svg
+A   src/assets/images/shield.png
+M   src/assets/scss/basic.scss
+M   src/assets/scss/reset.scss
+M   src/assets/scss/variables.scss
+D   src/components/HelloWorld.vue
+M   src/components/MainHeader.vue
+M   src/components/charts/ChartSetting.js
+M   src/components/charts/LargePie.js
+A   src/components/charts/SimpleLine.js
+M   src/components/messageList.vue
+M   src/router.js
+A   src/views/FactoryManage.vue
+M   src/views/FactorySafety.vue
+M   src/views/Home.vue
+D   src/views/factoryManage/factoryManage.scss
+D   src/views/factoryManage/factoryManage.vue
+D   src/views/test.vue
+M   yarn.lock
+
+-----------------------------------------------------------------------------------
+2018/12/25 ingrid
+-----------------------------------------------------------------------------------
+Merge factory-Manage page and factory-Safety page
+M   .gitignore
+A   src/assets/demo_data/img/camera_safety_1.jpg
+A   src/assets/demo_data/img/camera_safety_2.jpg
+A   src/assets/demo_data/img/camera_safety_3.jpg
+A   src/assets/demo_data/img/camera_safety_4.jpg
+A   src/assets/demo_data/img/camera_safety_5.jpg
+A   src/assets/demo_data/img/camera_safety_6.jpg
+M   src/assets/scss/basic.scss
+M   src/assets/scss/reset.scss
+M   src/assets/scss/variables.scss
+M   src/components/MainHeader.vue
+M   src/components/charts/ChartSetting.js
+M   src/components/consumeManage/annularAnalysis.vue
+M   src/components/consumeManage/deviceAbnormalCount.vue
+M   src/components/consumeManage/deviceCircularCount.vue
+M   src/components/consumeManage/deviceHistogramCount.vue
+M   src/components/consumeManage/productionAnalysis.vue
+M   src/components/consumeManage/proportion.vue
+M   src/components/messageList.vue
+M   src/components/regionalElement/AlertDataInfo.vue
+M   src/views/factoryManage/factoryManage.scss
+M   src/views/factoryManage/factoryManage.vue
+M   vue.config.js
+
+-----------------------------------------------------------------------------------
+2018/12/25 guanqun
+-----------------------------------------------------------------------------------
+M   src/App.vue
+
+-----------------------------------------------------------------------------------
+2018/12/24 guanqun
+-----------------------------------------------------------------------------------
+厂务管理
+
+M   src/assets/scss/reset.scss
+M   src/components/consumeManage/annularAnalysis.vue
+M   src/components/consumeManage/deviceAbnormalCount.vue
+M   src/components/consumeManage/deviceCircularCount.vue
+M   src/components/consumeManage/deviceHistogramCount.vue
+M   src/components/consumeManage/productionAnalysis.vue
+M   src/components/consumeManage/proportion.vue
+A   src/components/messageList.vue
+D   src/components/title/title.vue
+M   src/views/FactorySafety.vue
+M   src/views/factoryManage/factoryManage.scss
+M   src/views/factoryManage/factoryManage.vue
+M   src/views/test.vue
+
+-----------------------------------------------------------------------------------
+2018/12/24 guanqun
+-----------------------------------------------------------------------------------
+update yarn
+M   yarn.lock
+
+-----------------------------------------------------------------------------------
+2018/12/22 guanqun
+-----------------------------------------------------------------------------------
+all chart commit
+M   src/components/consumeManage/annularAnalysis.vue
+A   src/components/consumeManage/deviceAbnormalCount.vue
+A   src/components/consumeManage/deviceCircularCount.vue
+A   src/components/consumeManage/deviceHistogramCount.vue
+M   src/views/factoryManage/factoryManage.scss
+M   src/views/factoryManage/factoryManage.vue
+M   src/views/test.vue
+
+-----------------------------------------------------------------------------------
+2018/12/22 Baverly
+-----------------------------------------------------------------------------------
+Add video stream support. But now we don't have video sources, so use image instead.
+M   .gitignore
+M   package.json
+M   src/assets/scss/basic.scss
+M   src/main.js
+M   src/views/FactorySafety.vue
+A   public/demo_data/img/*
+A   src/components/VideoPlayer.vue
+
+-----------------------------------------------------------------------------------
+2018/12/21 Ingrid
+-----------------------------------------------------------------------------------
+Implementation factory security page includes charts and layouts
+M   package.json
+M   src/App.vue
+A   src/assets/fonts.css
+A   src/assets/fonts/icomoon.eot
+A   src/assets/fonts/icomoon.svg
+A   src/assets/fonts/icomoon.ttf
+A   src/assets/fonts/icomoon.woff
+M   src/assets/scss/basic.scss
+M   src/assets/scss/variables.scss
+D   src/components/AlertDataInfo.vue
+M   src/components/MainHeader.vue
+A   src/components/charts/ChartSetting.js
+A   src/components/charts/LargePie.js
+A   src/components/charts/SimplePie.js
+A   src/components/regionalElement/AlertDataInfo.vue
+M   src/main.js
+M   src/views/FactorySafety.vue
+M   src/views/Home.vue
+A   vue.config.js
+M   yarn.lock
+
+-----------------------------------------------------------------------------------
+2018/12/20 Ingrid
+-----------------------------------------------------------------------------------
+Initial commit
+A   .browserslistrc
+A   .gitignore
+A   README.md
+A   babel.config.js
+A   package.json
+A   postcss.config.js
+A   public/index.html
+A   public/manifest.json
+A   public/robots.txt
+A   src/App.vue
+A   src/assets/images/foxconn.svg
+A   src/assets/images/title.svg
+A   src/assets/scss/basic.scss
+A   src/assets/scss/reset.scss
+A   src/assets/scss/variables.scss
+A   src/assets/scss/vuebar.scss
+A   src/components/AlertDataInfo.vue
+A   src/components/HelloWorld.vue
+A   src/components/LoadingSvg.vue
+A   src/components/MainHeader.vue
+A   src/main.js
+A   src/registerServiceWorker.js
+A   src/router.js
+A   src/store.js
+A   src/views/FactorySafety.vue
+A   src/views/Home.vue
+A   yarn.lock
